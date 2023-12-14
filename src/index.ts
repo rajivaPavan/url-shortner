@@ -16,6 +16,7 @@ export interface Env {
 	  let redirectURL = await env.SHORT_URLS.get(pathname);
   
 	  if (!redirectURL) {
+		// If the short URL is not found, redirect to the 404 page of my personal website
 		redirectURL = "https://pavanpitiwaduge.me/not-found";
 	  }
   
