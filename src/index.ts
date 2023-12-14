@@ -13,12 +13,10 @@ export interface Env {
   
 	  const { pathname } = url;
   
-	  const redirectURL = await env.SHORT_URLS.get(pathname);
+	  let redirectURL = await env.SHORT_URLS.get(pathname);
   
 	  if (!redirectURL) {
-		return new Response(
-		  `There is no defined URL for the path: '${pathname}', sorry :(`
-		);
+		redirectURL = "https://pavanpitiwaduge.me/not-found";
 	  }
   
 	  return Response.redirect(redirectURL, 301);
