@@ -1,3 +1,7 @@
-name = "url-shortner"
+name = "short-it"
 main = "src/index.ts"
 compatibility_date = "2023-12-14"
+
+kv_namespaces = [
+  { binding = "SHORT_URLS", id = "6a8f21a8bd0140e3adc2d29fa9c4c8e3", preview_id = "26cc7f0196d241c28b09a9aefc99b083" }
+]
